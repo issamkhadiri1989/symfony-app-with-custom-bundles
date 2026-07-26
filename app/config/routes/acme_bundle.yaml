@@ -1,0 +1,3 @@
+acme:
+    resource: '@AcmeBundle/config/routes.yaml'
+    prefix: /acme

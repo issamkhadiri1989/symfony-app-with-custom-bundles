@@ -1,0 +1,18 @@
+{
+    "name": "ikhadiri/acme-bundle",
+    "description": "description",
+    "authors": [
+        {
+            "name": "issam",
+            "email": "email@example.com"
+        }
+    ],
+    "require": {
+        "symfony/cache": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ikhadiri\\AcmeBundle\\": "src/"
+        }
+    }
+}

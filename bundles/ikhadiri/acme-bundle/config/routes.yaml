@@ -1,0 +1,3 @@
+acme.account.homepage:
+    path: /account
+    controller: Ikhadiri\AcmeBundle\Controller\AccountController
