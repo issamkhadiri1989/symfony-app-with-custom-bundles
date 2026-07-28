@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a7e2dea7225c44c022fc905b3c0ceaf",
+    "content-hash": "bb86745d4942965a45d82de9a4310bd5",
     "packages": [
         {
             "name": "ikhadiri/acme-bundle",
@@ -12,7 +12,10 @@
             "dist": {
                 "type": "path",
                 "url": "/var/www/bundles/ikhadiri/acme-bundle",
-                "reference": "b28da1b7373ac4389e3ac97b0e06ca4142c02a85"
+                "reference": "b4d9fe9c7ef06402287c8a8017b85ee56d841468"
+            },
+            "require": {
+                "symfony/cache": "8.0.*"
             },
             "type": "library",
             "autoload": {
@@ -20,6 +23,34 @@
                     "Ikhadiri\\AcmeBundle\\": "src/"
                 }
             },
+            "authors": [
+                {
+                    "name": "issam",
+                    "email": "email@example.com"
+                }
+            ],
+            "description": "description",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
+            "name": "ikhadiri/legacy-acme-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/var/www/bundles/ikhadiri/legacy-acme-bundle",
+                "reference": "20ebdfb7dd59553caad62c592a5bcd34293ba5b8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ikhadiri\\LegacyAcmeBundle\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
             "authors": [
                 {
                     "name": "issam",
@@ -2508,7 +2539,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ikhadiri/acme-bundle": 20
+        "ikhadiri/acme-bundle": 20,
+        "ikhadiri/legacy-acme-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

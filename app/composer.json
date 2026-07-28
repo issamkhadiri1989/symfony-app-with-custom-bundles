@@ -8,6 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ikhadiri/acme-bundle": "dev-main",
+        "ikhadiri/legacy-acme-bundle": "dev-main",
         "symfony/cache": "8.0.*",
         "symfony/console": "8.0.*",
         "symfony/dotenv": "8.0.*",
@@ -72,6 +73,10 @@
         {
             "type": "path",
             "url": "/var/www/bundles/ikhadiri/acme-bundle"
+        },
+        {
+            "type": "path",
+            "url": "/var/www/bundles/ikhadiri/legacy-acme-bundle"
         }
     ]
 }

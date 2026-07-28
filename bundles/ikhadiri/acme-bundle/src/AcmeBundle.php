@@ -12,6 +12,7 @@ class AcmeBundle extends AbstractBundle
 {
     public function loadExtension(array $config, ContainerConfigurator $configurator, ContainerBuilder $container): void
     {
+        dump(__CLASS__);
         $configurator->import('../config/services.yaml');
 
         // configure services
@@ -23,6 +24,7 @@ class AcmeBundle extends AbstractBundle
 
     public function configure(DefinitionConfigurator $definition): void
     {
+        dump(__METHOD__);
         $definition->rootNode()
             ->children()
                 ->arrayNode('secret')

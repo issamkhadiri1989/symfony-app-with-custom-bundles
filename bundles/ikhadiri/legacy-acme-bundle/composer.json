@@ -1,6 +1,7 @@
 {
-    "name": "ikhadiri/acme-bundle",
+    "name": "ikhadiri/legacy-acme-bundle",
     "description": "description",
+    "license": "proprietary",
     "authors": [
         {
             "name": "issam",
@@ -8,11 +9,10 @@
         }
     ],
     "require": {
-        "symfony/cache": "8.0.*"
     },
     "autoload": {
         "psr-4": {
-            "Ikhadiri\\AcmeBundle\\": "src/"
+            "Ikhadiri\\LegacyAcmeBundle\\": "src/"
         }
     }
 }

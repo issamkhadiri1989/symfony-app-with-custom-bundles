@@ -2,6 +2,9 @@
     "ikhadiri/acme-bundle": {
         "version": "dev-main"
     },
+    "ikhadiri/legacy-acme-bundle": {
+        "version": "dev-main"
+    },
     "symfony/console": {
         "version": "8.0",
         "recipe": {
