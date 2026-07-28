@@ -2,9 +2,14 @@
 
 namespace Ikhadiri\LegacyAcmeBundle;
 
+use Ikhadiri\LegacyAcmeBundle\Extension\CustomAcmeBundleExtension;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class LegacyAcmeBundle extends Bundle
 {
-    // root configuration key here is `legacy_acme`
+   public function getContainerExtension(): ?ExtensionInterface
+   {
+       return new CustomAcmeBundleExtension();
+   }
 }
